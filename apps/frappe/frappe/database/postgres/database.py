@@ -42,6 +42,10 @@ LOCATE_SUB_PATTERN = re.compile(r"locate\(([^,]+),([^)]+)(\)?)\)", flags=re.IGNO
 LOCATE_QUERY_PATTERN = re.compile(r"locate\(", flags=re.IGNORECASE)
 PG_TRANSFORM_PATTERN = re.compile(r"([=><]+)\s*([+-]?\d+)(\.0)?(?![a-zA-Z\.\d])")
 FROM_TAB_PATTERN = re.compile(r"from tab([\w-]*)", flags=re.IGNORECASE)
+INDEX_HINT_PATTERN = re.compile(
+	r"\b(USE|FORCE|IGNORE)\s+INDEX(?:\s+FOR\s+(?:JOIN|ORDER\s+BY|GROUP\s+BY))?\s*\([^)]*\)",
+	re.IGNORECASE,
+)
 
 
 class PostgresExceptionUtil:
@@ -536,6 +540,7 @@ def modify_query(query):
 	query = replace_locate_with_strpos(query)
 	# select from requires ""
 	query = FROM_TAB_PATTERN.sub(r'from "tab\1"', query)
+	query = INDEX_HINT_PATTERN.sub("", query)
 
 	if re.search(r"\bINSERT\s+IGNORE\s+INTO\b", query, flags=re.IGNORECASE):
 		query = re.sub(r"\bINSERT\s+IGNORE\s+INTO\b", "INSERT INTO", query, flags=re.IGNORECASE)

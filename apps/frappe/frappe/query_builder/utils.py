@@ -271,7 +271,15 @@ def patch_get_query():
 	Base.get_query = get_query
 
 
+def patch_postgres_index_hints():
+	from pypika.dialects import PostgreSQLQueryBuilder
+
+	PostgreSQLQueryBuilder._force_index_sql = lambda self, **kwargs: ""
+	PostgreSQLQueryBuilder._use_index_sql = lambda self, **kwargs: ""
+
+
 def patch_all():
 	patch_query_execute()
 	patch_query_aggregation()
 	patch_get_query()
+	patch_postgres_index_hints()
