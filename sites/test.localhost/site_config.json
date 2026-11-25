@@ -2,9 +2,11 @@
  "db_name": "erpnext",
  "db_password": "yORFyicvfSpxAqju",
  "db_type": "postgres",
+ "developer_mode": 1,
  "flow_server_secret": "aeb5b0fa760847f19c21d7278322acada429b51eb73bfaef",
  "installed_apps": [
   "frappe",
-  "erpnext"
+  "erpnext",
+  "library_management"
  ]
 }

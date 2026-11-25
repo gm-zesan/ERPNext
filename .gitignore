@@ -51,8 +51,7 @@ sites/assets/
 sites/**/locks/
 sites/**/logs/
 sites/**/public/files/
-sites/**/private/files/
-sites/**/private/backups/
+sites/**/private/
 sites/**/.test_log
 sites/**/touched_tables.json
 
