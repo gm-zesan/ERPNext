@@ -183,6 +183,7 @@ class PostgresDatabase(PostgresExceptionUtil, Database):
 		super().connect()
 
 		self._cursor.execute("SET search_path TO %s", (self.db_schema,))
+		self._cursor.execute("SET idle_in_transaction_session_timeout = '15s'")
 
 	def get_connection(self):
 		conn_settings = {
