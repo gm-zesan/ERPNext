@@ -2,18 +2,18 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "format:LMB-.#####",
+ "autoname": "LMB-.#####",
  "creation": "2026-11-25 17:17:21.119121",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "details_section",
   "first_name",
+  "full_name",
   "email_address",
   "col_break_1",
   "last_name",
-  "phone",
-  "full_name"
+  "phone"
  ],
  "fields": [
   {
@@ -61,8 +61,8 @@
  "index_web_pages_for_search": 1,
  "link_display_mode": "Search",
  "links": [],
- "modified": "2026-11-25 17:23:44.956376",
- "modified_by": "Administrator",
+ "modified": "2026-11-25 17:54:13.908752",
+ "modified_by": "gmzesan7767@gmail.com",
  "module": "Library Management",
  "name": "Library Member",
  "naming_rule": "Expression (old style)",

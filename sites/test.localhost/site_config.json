@@ -1,4 +1,5 @@
 {
+ "allow_tests": true,
  "db_name": "erpnext",
  "db_password": "yORFyicvfSpxAqju",
  "db_type": "postgres",

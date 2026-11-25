@@ -2,7 +2,7 @@
  "actions": [],
  "allow_bulk_edit": 1,
  "allow_rename": 1,
- "autoname": "format:ART-.#####",
+ "autoname": "ART-.#####",
  "creation": "2026-11-24 18:38:12.935379",
  "doctype": "DocType",
  "engine": "InnoDB",
