@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+    <linearGradient id="pageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+  </defs>
+  <!-- Background Card -->
+  <rect x="6" y="6" width="88" height="88" rx="22" fill="url(#bgGrad)" />
+  <!-- Open Book Left Page -->
+  <path d="M26 34 C26 29 34 29 48 33 L48 71 C34 67 26 68 26 73 Z" fill="url(#pageGrad)" />
+  <!-- Open Book Right Page -->
+  <path d="M74 34 C74 29 66 29 52 33 L52 71 C66 67 74 68 74 73 Z" fill="url(#pageGrad)" />
+  <!-- Spine Separation -->
+  <line x1="50" y1="33" x2="50" y2="71" stroke="#94A3B8" stroke-width="1.5" />
+  <!-- Bookmark Ribbon -->
+  <path d="M47 27 L53 27 L53 43 L50 40 L47 43 Z" fill="#FBBF24" />
+</svg>

@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "creation": "2026-11-26 13:51:20.125664",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "loan_rules_section",
+  "loan_period_days",
+  "column_break_faya",
+  "maximum_articles_allowed"
+ ],
+ "fields": [
+  {
+   "fieldname": "loan_rules_section",
+   "fieldtype": "Section Break",
+   "label": "Loan Rules"
+  },
+  {
+   "default": "14",
+   "fieldname": "loan_period_days",
+   "fieldtype": "Int",
+   "label": "Loan Period (Days)"
+  },
+  {
+   "fieldname": "column_break_faya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "3",
+   "fieldname": "maximum_articles_allowed",
+   "fieldtype": "Int",
+   "label": "Maximum Articles Allowed"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "link_display_mode": "Search",
+ "links": [],
+ "modified": "2026-11-26 13:53:17.850747",
+ "modified_by": "gmzesan7767@gmail.com",
+ "module": "Library Management",
+ "name": "Library Settings",
+ "owner": "gmzesan7767@gmail.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

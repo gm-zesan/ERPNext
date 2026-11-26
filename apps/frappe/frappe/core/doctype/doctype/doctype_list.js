@@ -16,7 +16,7 @@ frappe.listview_settings["DocType"] = {
 			editable_grid = 1,
 		} = args || {};
 
-		let non_developer = frappe.session.user !== "Administrator" || !frappe.boot.developer_mode;
+		let non_developer = !frappe.boot.developer_mode || (!frappe.user.has_role("System Manager") && frappe.session.user !== "Administrator");
 		let fields = [
 			{
 				label: __("Name"),

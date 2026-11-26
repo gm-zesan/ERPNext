@@ -11,15 +11,14 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "library_management",
-# 		"logo": "/assets/library_management/logo.png",
-# 		"title": "Library Management",
-# 		"route": "/library_management",
-# 		"has_permission": "library_management.api.permission.has_app_permission",
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+		"name": "library_management",
+		"logo": "/assets/library_management/images/library-logo.svg",
+		"title": "Library Management",
+		"route": "/desk/library-management",
+	}
+]
 
 # The dock, the rail down the left of the desk, is a document rather than a hook. Author it in
 # Manage Dock on a developer-mode site and press Export to App, and it is written to
