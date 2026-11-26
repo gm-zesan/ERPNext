@@ -1,0 +1,50 @@
+<div class="print-format" style="max-width: 460px; margin: 25px auto; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+    <div style="background: linear-gradient(135deg, #1e3a8a, #3b82f6); border-radius: 16px; padding: 24px; color: white; box-shadow: 0 10px 25px rgba(37,99,235,0.25); border: 1px solid rgba(255,255,255,0.2);">
+        
+        <!-- Header -->
+        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.25); padding-bottom: 14px; margin-bottom: 18px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 28px;">📚</span>
+                <div>
+                    <h3 style="margin: 0; font-size: 16px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px;">City Central Library</h3>
+                    <small style="opacity: 0.85; font-size: 11px;">Member Identity Card</small>
+                </div>
+            </div>
+            <span style="background: rgba(255,255,255,0.25); padding: 4px 10px; border-radius: 20px; font-size: 10px; font-weight: 700; text-transform: uppercase;">
+                Active
+            </span>
+        </div>
+
+        <!-- Body Details -->
+        <div style="display: flex; gap: 18px; align-items: center; margin-bottom: 20px;">
+            <div style="width: 75px; height: 75px; background: rgba(255,255,255,0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 34px; border: 2px solid rgba(255,255,255,0.4); flex-shrink: 0;">
+                👤
+            </div>
+            <div style="flex-grow: 1;">
+                <h4 style="margin: 0 0 6px 0; font-size: 20px; font-weight: 700; color: #ffffff;">{{ doc.full_name }}</h4>
+                <div style="font-size: 12px; margin-bottom: 4px; opacity: 0.95;">
+                    <strong>Member ID:</strong> <span style="font-family: monospace; font-size: 13px; background: rgba(0,0,0,0.2); padding: 2px 6px; border-radius: 4px;">{{ doc.name }}</span>
+                </div>
+                <div style="font-size: 12px; opacity: 0.9;">
+                    📧 {{ doc.email_address or "N/A" }}
+                </div>
+                <div style="font-size: 12px; opacity: 0.9;">
+                    📞 {{ doc.phone or "N/A" }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Footer -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; border-top: 1px solid rgba(255,255,255,0.25); padding-top: 12px; font-size: 10px; opacity: 0.9;">
+            <div>
+                <div><strong>Registered:</strong> {{ frappe.utils.formatdate(doc.creation) }}</div>
+                <div style="margin-top: 2px;">Authorized Library Card</div>
+            </div>
+            <div style="text-align: right;">
+                <div style="font-family: monospace; font-size: 15px; letter-spacing: 2px;">* {{ doc.name }} *</div>
+                <div style="font-size: 9px; opacity: 0.75;">Barcode ID Scan</div>
+            </div>
+        </div>
+
+    </div>
+</div>
