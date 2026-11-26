@@ -70,7 +70,13 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "link_display_mode": "Search",
- "links": [],
+ "links": [
+  {
+   "group": "Transactions",
+   "link_doctype": "Library Transaction",
+   "link_fieldname": "article"
+  }
+ ],
  "modified": "2026-11-25 16:26:21.800410",
  "modified_by": "Administrator",
  "module": "Library Management",

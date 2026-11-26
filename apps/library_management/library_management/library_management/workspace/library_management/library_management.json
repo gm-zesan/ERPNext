@@ -17,7 +17,7 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Library Operations",
-   "link_count": 4,
+   "link_count": 5,
    "onboard": 0,
    "type": "Card Break"
   },
@@ -58,6 +58,16 @@
    "link_count": 0,
    "link_to": "Library Membership",
    "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Overdue Articles Report",
+   "link_count": 0,
+   "link_to": "Overdue Articles",
+   "link_type": "Report",
    "onboard": 0,
    "type": "Link"
   },

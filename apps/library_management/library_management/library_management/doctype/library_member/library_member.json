@@ -60,7 +60,18 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "link_display_mode": "Search",
- "links": [],
+ "links": [
+  {
+   "group": "Memberships",
+   "link_doctype": "Library Membership",
+   "link_fieldname": "library_member"
+  },
+  {
+   "group": "Transactions",
+   "link_doctype": "Library Transaction",
+   "link_fieldname": "library_member"
+  }
+ ],
  "modified": "2026-11-25 17:54:13.908752",
  "modified_by": "gmzesan7767@gmail.com",
  "module": "Library Management",
